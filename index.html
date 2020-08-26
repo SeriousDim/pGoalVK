@@ -11,10 +11,12 @@
       VK.init(function() {
          // API initialization succeeded
          // Your code here
+         console.log("VK API for JS is initiated.");
          UnityLoader.instantiate("unityContainer", "Build/testgameunity.json");
       }, function() {
          // API initialization failed
          // Can reload page here
+         console.log("Error: VK API for JS is not initiated");
     }, '5.122');
     </script>
   </head>
