@@ -1,27 +1,25 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-    
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | Chistoman Official Game</title>
     <script src="Build/UnityLoader.js"></script>
-
-    <script src="https://vk.com/js/api/xd_connection.js?2"  type="text/javascript"></script>
-    <script type="text/javascript">
-      VK.init(function() {
-         // API initialization succeeded
-         // Your code here
-         console.log("VK API for JS is initiated.");
-         UnityLoader.instantiate("unityContainer", "Build/testgameunity.json");
-      }, function() {
-         // API initialization failed
-         // Can reload page here
-         console.log("Error: VK API for JS is not initiated");
-    }, '5.122');
+    <script>
+      UnityLoader.instantiate("unityContainer", "Build/testgameunity.json");
     </script>
+    
   </head>
   <body>
+
+    <script src="https://vk.com/js/api/openapi.js?168" type="text/javascript"></script>
+    <script type="text/javascript">
+      VK.init({
+        apiId: 	7571715
+      });
+    </script>
+
     <div id="unityContainer" style="width: 960px; height: 720px; margin: auto"></div>
+  
   </body>
 </html>
